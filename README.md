@@ -1,2 +1,1 @@
-# Daily-Temperatures
-Array Stack Monotonic Stack
+https://leetcode.com/problems/daily-temperatures
