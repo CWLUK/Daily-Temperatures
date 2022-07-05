@@ -1,0 +1,10 @@
+class Solution:
+    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+        sk = []
+        result = [0]*len(temperatures)
+        for i, t in enumerate(temperatures):
+            while sk and t>temperatures[sk[-1]]:
+                result[sk[-1]] = i - sk[-1]
+                sk.pop()
+            sk.append(i)
+        return result
